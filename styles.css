@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/poppins-regular.woff2") format("woff2"),
+    url("./assets/fonts/poppins-regular.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Fredoka One";
+  src: url("./assets/fonts/fredokaone.woff2") format("woff2"),
+    url("./assets/fonts/fredokaone.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;
