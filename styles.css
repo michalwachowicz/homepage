@@ -63,6 +63,13 @@ body {
   margin: 2rem 3rem 0;
 }
 
+.header-icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
 .heading {
   font-family: "Fredoka One", sans-serif;
   font-weight: 400;
