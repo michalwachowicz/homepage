@@ -1,3 +1,48 @@
 .footer {
   background-color: #d9c49b;
+  color: #001f3f;
+
+  &-heading {
+    color: #0077b6;
+
+    @media (min-width: 600px) {
+      text-align: left;
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 3rem 4rem;
+
+    @media (min-width: 760px) {
+      padding: 0;
+      align-items: start;
+    }
+  }
+
+  &-icon-container {
+    margin-top: 2rem;
+  }
+
+  &-container {
+    max-width: 1200px;
+
+    @media (min-width: 760px) {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem;
+
+      & > * {
+        flex: 1;
+      }
+    }
+
+    @media (min-width: 1264px) {
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+  }
 }
