@@ -1,18 +1,34 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .header-background {
-  position: relative;
+  position: absolute;
   background: linear-gradient(#5bfbf3, #1d69f2);
+  width: 100%;
   height: 18rem;
   overflow: hidden;
+  z-index: 1;
 }
 
 .header-background-image {
   position: absolute;
   animation: flowers 20s ease infinite alternate;
+}
+
+.header-container {
+  position: absolute;
+  margin-top: 4rem;
+  z-index: 2;
+}
+
+.header-image > img {
+  display: block;
+  border-radius: 1rem;
+  margin: 0 4rem;
+  width: calc(100% - 8rem);
 }
 
 @keyframes flowers {

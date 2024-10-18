@@ -10,6 +10,32 @@
   <body>
     <header class="header">
       <div class="header-background"></div>
+      <div class="header-container">
+        <picture class="image header-image">
+          <source
+            type="image/webp"
+            srcset="
+              assets/images/jpg/spongebob/spongebob-1050.webp 1050w,
+              assets/images/jpg/spongebob/spongebob-350.webp   350w,
+              assets/images/jpg/spongebob/spongebob-700.webp   700w
+            "
+          />
+
+          <source
+            type="image/jpeg"
+            srcset="
+              assets/images/jpg/spongebob/spongebob-1050.jpg 1050w,
+              assets/images/jpg/spongebob/spongebob-350.jpg   350w,
+              assets/images/jpg/spongebob/spongebob-700.jpg   700w
+            "
+          />
+
+          <img
+            src="assets/images/jpg/spongebob/spongebob-1050.jpg"
+            alt="Spongebob Squarepants"
+          />
+        </picture>
+      </div>
     </header>
   </body>
 </html>
