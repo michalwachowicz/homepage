@@ -1,0 +1,8 @@
+.main {
+  margin: 7rem 2rem;
+  max-width: 1200px;
+
+  @media (min-width: 1264px) {
+    margin: 7rem auto;
+  }
+}

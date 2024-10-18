@@ -209,4 +209,14 @@ p {
     flex-direction: column;
     align-items: end;
   }
+}
+
+.main {
+  margin: 7rem 2rem;
+  max-width: 1200px;
+}
+@media (min-width: 1264px) {
+  .main {
+    margin: 7rem auto;
+  }
 }/*# sourceMappingURL=index.css.map */
