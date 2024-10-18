@@ -130,6 +130,12 @@ p {
   color: #fff;
 }
 
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
 .header-background {
   position: absolute;
   background: linear-gradient(#5bfbf3, #1d69f2);
@@ -212,9 +218,6 @@ p {
   }
 }
 .header-icon-container {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
   margin-top: 3rem;
 }
 @media (min-width: 600px) and (max-width: 959px) {
