@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-background {
+  position: relative;
+  background: linear-gradient(#5bfbf3, #1d69f2);
+  height: 18rem;
+  overflow: hidden;
+}
+
+.header-background-image {
+  position: absolute;
+}
