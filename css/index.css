@@ -111,6 +111,25 @@ p {
     transform: translateY(2rem) rotate(180deg) scale(1);
   }
 }
+.card {
+  background-color: #009ddc;
+  border-radius: 1rem;
+}
+.card-image > img {
+  border-radius: 1rem;
+}
+.card-text {
+  padding: 2rem 1.5rem;
+}
+.card-heading {
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.card-heading, .card-description {
+  color: #fff;
+}
+
 .header-background {
   position: absolute;
   background: linear-gradient(#5bfbf3, #1d69f2);

@@ -64,7 +64,44 @@
 
     <main class="main">
       <h2 class="heading heading-main">My Friends</h2>
-      <div class="main-cards"></div>
+      <div class="main-cards">
+        <section class="card">
+          <picture class="image card-image">
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/jpg/patrick/patrick-1050.webp 1050w,
+                assets/images/jpg/patrick/patrick-700.webp   700w,
+                assets/images/jpg/patrick/patrick-350.webp   350w
+              "
+            />
+
+            <source
+              type="image/jpeg"
+              srcset="
+                assets/images/jpg/patrick/patrick-1050.jpg 1050w,
+                assets/images/jpg/patrick/patrick-700.jpg   700w,
+                assets/images/jpg/patrick/patrick-350.jpg   350w
+              "
+            />
+
+            <img
+              src="assets/images/jpg/patrick/patrick-1050.jpg"
+              alt="Patrick Star"
+            />
+          </picture>
+
+          <div class="card-text">
+            <h3 class="heading card-heading">Patrick Star</h3>
+            <p class="card-description">
+              Patrick is my best friend in the whole ocean! He might not be the
+              smartest, but he's always there for me. We love jellyfishing,
+              going on crazy adventures, or just doing nothing together. No one
+              can make me laugh like Patrick!
+            </p>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>
