@@ -238,4 +238,20 @@ p {
   .main {
     margin: 7rem auto;
   }
+}
+.main-cards {
+  display: grid;
+  margin-top: 2rem;
+  gap: 2rem;
+  grid-auto-rows: 1fr;
+}
+@media (min-width: 600px) {
+  .main-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .main-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }/*# sourceMappingURL=index.css.map */
