@@ -12,4 +12,15 @@
 
 .header-background-image {
   position: absolute;
+  animation: flowers 20s ease infinite alternate;
+}
+
+@keyframes flowers {
+  from {
+    transform: translateY(-2rem) rotate(0deg) scale(0.95);
+  }
+
+  to {
+    transform: translateY(2rem) rotate(180deg) scale(1);
+  }
 }
