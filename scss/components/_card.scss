@@ -1,6 +1,10 @@
+@use "../abstracts/transitions" as *;
+
 .card {
   background-color: #009ddc;
   border-radius: 1rem;
+
+  @include hover-scale(1.02);
 
   &-image > img {
     border-radius: 1rem;

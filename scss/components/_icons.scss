@@ -1,5 +1,16 @@
+@use "../abstracts/transitions" as *;
+
 .icon-container {
   display: flex;
   justify-content: center;
   gap: 3rem;
+
+  & > a {
+    @include hover-scale(1.2);
+
+    & > img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
 }

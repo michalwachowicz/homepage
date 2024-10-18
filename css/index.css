@@ -106,6 +106,11 @@ p {
 .card {
   background-color: #009ddc;
   border-radius: 1rem;
+  transition: transform 0.6s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
 }
 .card-image > img {
   border-radius: 1rem;
@@ -126,6 +131,17 @@ p {
   display: flex;
   justify-content: center;
   gap: 3rem;
+}
+.icon-container > a {
+  transition: transform 0.6s ease-in-out;
+}
+.icon-container > a:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+.icon-container > a > img {
+  width: 3rem;
+  height: 3rem;
 }
 
 .header-background {
