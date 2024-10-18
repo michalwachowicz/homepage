@@ -1,0 +1,9 @@
+@keyframes flowers {
+  from {
+    transform: translateY(-2rem) rotate(0deg) scale(0.95);
+  }
+
+  to {
+    transform: translateY(2rem) rotate(180deg) scale(1);
+  }
+}

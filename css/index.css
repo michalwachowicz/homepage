@@ -1,0 +1,212 @@
+/*
+  Use a more intuitive box-sizing model
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove default margin and padding
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Set media elements defaults to block
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  Add word wrapping for long words to avoid overflowing
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+
+/*
+  Correct the inability to style clickable types in iOS and Safari
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -moz-appearance: button;
+       appearance: button;
+  -webkit-appearance: button;
+}
+
+/*
+  Remove the inner border and padding in Firefox
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/poppins-regular.woff2") format("woff2"), url("../assets/fonts/poppins-regular.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Fredoka One";
+  src: url("../assets/fonts/fredokaone.woff2") format("woff2"), url("../assets/fonts/fredokaone.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+body {
+  font-family: "Poppins", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  font-size: 1rem;
+}
+
+.heading {
+  font-family: "Fredoka One", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 3rem;
+  color: #ff4f81;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+@keyframes flowers {
+  from {
+    transform: translateY(-2rem) rotate(0deg) scale(0.95);
+  }
+  to {
+    transform: translateY(2rem) rotate(180deg) scale(1);
+  }
+}
+.header-background {
+  position: absolute;
+  background: linear-gradient(#5bfbf3, #1d69f2);
+  width: 100%;
+  height: 18rem;
+  overflow: hidden;
+  z-index: 1;
+  top: 0;
+}
+.header-background-image {
+  position: absolute;
+  animation: flowers 20s ease infinite alternate;
+}
+.header-container {
+  position: relative;
+  margin-top: 4rem;
+  max-width: 1200px;
+  z-index: 2;
+}
+@media (min-width: 600px) {
+  .header-container {
+    background-color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 4rem 2rem 0;
+  }
+}
+@media (min-width: 960px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .header-container > * {
+    flex: 1;
+  }
+}
+@media (min-width: 1264px) {
+  .header-container {
+    margin: 4rem auto 0;
+  }
+}
+.header-heading {
+  margin-top: 3rem;
+}
+@media (min-width: 600px) {
+  .header-heading {
+    margin: 0;
+    text-align: left;
+  }
+}
+.header-paragraph {
+  margin: 2rem 3rem 0;
+}
+@media (min-width: 600px) {
+  .header-paragraph {
+    margin: 0;
+    margin-top: 2rem;
+  }
+}
+.header-image > img {
+  display: block;
+  border-radius: 1rem;
+  margin: 0 4rem;
+  width: calc(100% - 8rem);
+}
+@media (min-width: 600px) {
+  .header-image > img {
+    float: left;
+    width: calc((100% - 6rem) / 2);
+    margin: 0 2rem 1rem 0;
+  }
+}
+@media (min-width: 960px) {
+  .header-image > img {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+}
+.header-icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+@media (min-width: 600px) and (max-width: 959px) {
+  .header-icon-container {
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  .header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+}/*# sourceMappingURL=index.css.map */
