@@ -114,6 +114,7 @@ p {
 }
 .card-image > img {
   width: 100%;
+  height: auto;
   border-radius: 1rem;
 }
 .card-text {
@@ -211,11 +212,13 @@ p {
   border-radius: 1rem;
   margin: 0 4rem;
   width: calc(100% - 8rem);
+  height: auto;
 }
 @media (min-width: 600px) {
   .header-image > img {
     float: left;
     width: calc((100% - 6rem) / 2);
+    height: auto;
     margin: 0 2rem 1rem 0;
   }
 }
@@ -223,6 +226,7 @@ p {
   .header-image > img {
     float: none;
     width: 100%;
+    height: auto;
     margin: 0;
   }
 }
@@ -294,6 +298,10 @@ p {
 }
 .footer-icon-container {
   margin-top: 2rem;
+}
+.footer-image > img {
+  width: 100%;
+  height: auto;
 }
 .footer-container {
   max-width: 1200px;
