@@ -1,5 +1,6 @@
 (() => {
   const IMG_SIZE = 128;
+  let clientWidth = 0;
 
   const background = document.querySelector(".header-background");
   const images = [];
@@ -32,6 +33,7 @@
 
   const fillBackground = (targetElement, images) => {
     background.innerHTML = "";
+    clientWidth = window.innerWidth;
 
     const maxImages = Math.floor(window.innerWidth / IMG_SIZE);
     const imagesLength = images.length;
@@ -61,5 +63,8 @@
   }
 
   window.addEventListener("load", () => fillBackground(background, images));
-  window.addEventListener("resize", () => fillBackground(background, images));
+  window.addEventListener("resize", () => {
+    if (clientWidth === window.innerWidth) return;
+    fillBackground(background, images);
+  });
 })();
